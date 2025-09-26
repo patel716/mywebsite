@@ -2,61 +2,93 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Your Name - Personal Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple HTML Page</title>
-</head>
-<body>
-    <h1>Welcome to My Page</h1>
-    <p>This is a simple paragraph of text.</p>
-    <p>You can add more content here, like images or links.</p>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Attractive Webpage</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 20px;
+            margin: 0;
+            font-family: 'Segoe UI', Verdana, sans-serif;
+            background: linear-gradient(135deg, #b2fefa 0%, #0ed2f7 100%);
         }
-        h1 {
-            color: #0056b3;
+        header {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 48px 0 24px 0;
         }
-        p {
-            line-height: 1.6;
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 5px solid #0ed2f7;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.12);
         }
-        .container {
+        main {
             max-width: 800px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin: 32px auto;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 40px rgba(0,0,0,0.09);
+            padding: 32px;
+        }
+        section {
+            margin-bottom: 32px;
+        }
+        h1, h2 {
+            color: #0ed2f7;
+        }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            font-size: 1.2em;
+        }
+        .contact-info a {
+            color: #0ed2f7;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .contact-info a:hover {
+            color: #222;
+        }
+        footer {
+            background: #0ed2f7;
+            text-align: center;
+            color: #fff;
+            padding: 20px 0;
+            border-radius: 0 0 16px 16px;
+        }
+        @media (max-width: 600px) {
+            main { padding: 16px; }
+            header { padding: 32px 0 12px 0; }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to an Attractive Webpage</h1>
-        <p>This is a paragraph with some styled text to demonstrate visual appeal.</p>
-        <p>Using CSS, we can control various aspects like font, color, and layout to make the content more engaging.</p>
-    </div>
+    <header>
+        <img src="profile.jpg" alt="my Profile Photo" class="profile-img">
+        <h1>Rudra</h1>
+        <p>Short tagline or professional title</p>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Welcome! I am a passionate individual specializing in [your specialization]. I enjoy [your hobbies/interests]. My journey has allowed me to achieve several milestones, including [notable achievement or experience]. Let's connect or collaborate!
+            </p>
+        </section>
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <div class="contact-info">
+                <span>Email: <a href="mailto:rudrapatel91199@gmail.com">your.email@example.com</a></span>
+                <span>Phone: <a href="tel:+1234567890">+91 7016688177</a></span>
+                <span>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">yourprofile</a></span>
+                <span>Instagram: <a href="https://instagram.com/yourusername" target="_blank">@yourusername</a></span>
+            </div>
+        </section>
+    </main>
+    <footer>
+        © 2025 Your Name. All rights reserved.
+    </footer>
 </body>
 </html>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Ferrari Page</title>
-        <link rel="stylesheet" href="style.css"> <!-- Link to a CSS file -->
-    </head>
-    <body>
-        <!-- Your content goes here -->
-    </body>
-    </html>
